@@ -18,7 +18,7 @@ class TestLoanAssessment(unittest.TestCase):
         self.assertEqual(result, "Eligible")
     
     def test_customer_manual_review(self):
-        result = logic(22, 5_000_000)
+        result = logic(22, 6_000_000)
         self.assertEqual(result, "Manual Review")
     
     def test_customer_not_eligible_by_income(self):
